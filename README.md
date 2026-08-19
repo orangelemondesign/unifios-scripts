@@ -1,5 +1,25 @@
 # README.md
 
+## Create the Configuration File
+In the same folder as your Python script and CSV file, create a file named config.json. Put your credentials and settings here:
+```
+{
+    "controller": "https://10.10.10.2:11443",
+    "username": "your_local_admin",
+    "password": "your_password",
+    "site": "default",
+    "csv_file": "mac_addresses.csv"
+}
+```
+
+To prevent other users on the server from reading your password, restrict the file permissions so only your user account can read it. Run this in your terminal:
+```
+chmod 600 config.json
+```
+## The Automated Python Script
+download file unifi_ap_onoff.py
+
+
 ## Automatically Off and On Unifi Access Point using cron:
 
 Open your crontab editor (crontab -e).
