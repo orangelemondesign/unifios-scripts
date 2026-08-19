@@ -1,0 +1,7 @@
+{
+    "controller": "https://10.10.10.2:11443",
+    "username": "your_local_admin",
+    "password": "your_password",
+    "site": "default",
+    "csv_file": "mac_addresses.csv"
+}
